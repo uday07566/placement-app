@@ -1,0 +1,190 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* Same Background Shapes as Login Page */
+
+body::before{
+content:"";
+position:absolute;
+top:-100px;
+left:-100px;
+width:300px;
+height:300px;
+background:linear-gradient(135deg,#6a11cb,#2575fc);
+border-radius:50%;
+opacity:0.3;
+}
+
+body::after{
+content:"";
+position:absolute;
+bottom:-100px;
+right:-100px;
+width:300px;
+height:300px;
+background:linear-gradient(135deg,#ff9966,#ff5e62);
+border-radius:50%;
+opacity:0.3;
+}
+
+/* Registration Card */
+
+.register-box{
+
+background:white;
+padding:35px;
+
+width:370px;
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+position:relative;
+}
+
+/* Icon */
+
+.icon{
+font-size:50px;
+margin-bottom:10px;
+}
+
+/* Inputs */
+
+input, select{
+
+width:100%;
+padding:12px;
+margin:8px 0;
+
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+/* Button */
+
+button{
+
+width:100%;
+padding:12px;
+margin-top:10px;
+
+border:none;
+border-radius:6px;
+
+background:#2575fc;
+color:white;
+
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1a5edb;
+}
+
+/* Links */
+
+a{
+font-size:14px;
+color:#2575fc;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+/* Success Message */
+
+#message{
+margin-top:15px;
+font-weight:bold;
+color:green;
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .mentor-card,
+body.dark-mode .mentor-profile,
+body.dark-mode .profile-container,
+body.dark-mode .chat-container,
+body.dark-mode .chat-card,
+body.dark-mode .message-box,
+body.dark-mode .notification-card,
+body.dark-mode .settings-panel,
+body.dark-mode .sidebar,
+body.dark-mode .modal-content,
+body.dark-mode .dashboard-card,
+body.dark-mode .post-card{
+    background:#1e1e1e !important;
+    color:white !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#2a2a2a !important;
+    color:white !important;
+    border:1px solid #444 !important;
+}
+
+body.dark-mode button{
+    background:#333 !important;
+    color:white !important;
+}
+
+body.dark-mode a{
+    color:#4da6ff !important;
+}
+
+body.dark-mode table{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark-mode th,
+body.dark-mode td{
+    border-color:#444;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .login-box,
+    .card {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

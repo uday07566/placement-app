@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion</title>
+  <link rel="stylesheet" href="discussion.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Question Section -->
+  <div class="question-card">
+
+    <h1 id="questionTitle"></h1>
+
+    <div class="question-meta">
+      Asked by
+      <span id="questionUser"></span>
+    </div>
+
+    <p id="questionDescription"></p>
+
+  </div>
+
+  <!-- Replies -->
+
+  <div class="replies-section">
+
+    <h2>Replies</h2>
+
+    <div id="repliesContainer"></div>
+
+  </div>
+
+  <!-- Add Reply -->
+
+  <div class="reply-box">
+
+    <textarea
+      id="replyText"
+      placeholder="Write your reply..."
+    ></textarea>
+
+    <button id="replyBtn">
+      Post Reply
+    </button>
+
+  </div>
+
+</div>
+
+<script src="discussion.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

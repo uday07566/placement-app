@@ -1,0 +1,156 @@
+/* Global */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f7fb;
+    padding:40px;
+}
+
+/* Container */
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#4f9cff;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    color:#333;
+    border-bottom:1px solid #eee;
+    padding-bottom:8px;
+}
+
+/* Inputs */
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#4f9cff;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* Read Only Email */
+
+input[readonly]{
+    background:#f0f0f0;
+    cursor:not-allowed;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#4f9cff;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#3a86e8;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:20px;
+    }
+
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .mentor-card,
+body.dark-mode .mentor-profile,
+body.dark-mode .profile-container,
+body.dark-mode .chat-container,
+body.dark-mode .chat-card,
+body.dark-mode .message-box,
+body.dark-mode .notification-card,
+body.dark-mode .settings-panel,
+body.dark-mode .sidebar,
+body.dark-mode .modal-content,
+body.dark-mode .dashboard-card,
+body.dark-mode .post-card{
+    background:#1e1e1e !important;
+    color:white !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#2a2a2a !important;
+    color:white !important;
+    border:1px solid #444 !important;
+}
+
+body.dark-mode button{
+    background:#333 !important;
+    color:white !important;
+}
+
+body.dark-mode a{
+    color:#4da6ff !important;
+}
+
+body.dark-mode table{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark-mode th,
+body.dark-mode td{
+    border-color:#444;
+}

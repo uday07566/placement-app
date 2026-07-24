@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Shapes */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+body::before {
+  top: -80px;
+  left: -80px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+body::after {
+  bottom: -80px;
+  right: -80px;
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
+}
+
+/* Card */
+.login-box {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 35px 30px;
+  width: 380px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.login-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Icon */
+.icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 5px;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Inputs + Select */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fafafa;
+  transition: 0.25s;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.radio-group label {
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* Links */
+a {
+  font-size: 14px;
+  color: #6366f1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Message */
+#registerMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 25px;
+  }
+}

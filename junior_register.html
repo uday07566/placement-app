@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junior Registration</title>
+  <link rel="stylesheet" href="./junior_register.css" />
+</head>
+
+<body>
+
+<div class="register-box">
+
+  <div class="icon">🎓</div>
+  <h2>Junior Registration</h2>
+
+  <!-- ✅ Error / Message Box -->
+  <p id="message"></p>
+
+  <!-- ✅ Form starts -->
+  <form id="juniorForm">
+
+    <input type="text" id="name" placeholder="Enter your full name">
+
+    <input type="text" id="userid" placeholder="Create your User ID">
+
+    <input type="email" id="email" placeholder="Enter your college email">
+
+    <select id="department">
+  <option value="">Select Department</option>
+
+  <option>CSE</option>
+  <option>CSE (AI & ML)</option>
+  <option>CSE (Data Science)</option>
+  <option>CSE (Cyber Security)</option>
+  <option>CSE (IoT)</option>
+
+  <option>IT</option>
+
+  <option>ECE</option>
+  <option>EEE</option>
+
+  <option>MECH</option>
+  <option>CIVIL</option>
+
+  <option>AIML</option>
+  <option>AI & Data Science</option>
+
+  <option>Electronics & Computer Engineering</option>
+  <option>Electronics & Instrumentation</option>
+
+  <option>Mechanical (Automobile)</option>
+
+  <option>Chemical Engineering</option>
+  <option>Biotechnology</option>
+
+  <option>Food Technology</option>
+
+  <option>Aerospace Engineering</option>
+
+  <option>Robotics & Automation</option>
+
+</select>
+
+    <select id="year">
+      <option value="">Select Year</option>
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+    </select>
+
+    <select id="domain">
+
+  <option value="">Interested Domain (optional)</option>
+
+  <!-- 💻 Core Software -->
+  <option>Software Development</option>
+  <option>Web Development (Frontend)</option>
+  <option>Web Development (Backend)</option>
+  <option>Full Stack Development</option>
+  <option>Mobile App Development</option>
+
+  <!-- 🤖 AI / Data -->
+  <option>Data Science</option>
+  <option>Machine Learning</option>
+  <option>Artificial Intelligence</option>
+  <option>Deep Learning</option>
+  <option>Natural Language Processing</option>
+  <option>Data Analytics</option>
+
+  <!-- ☁️ Cloud & DevOps -->
+  <option>Cloud Computing</option>
+  <option>DevOps</option>
+  <option>Site Reliability Engineering (SRE)</option>
+  <option>System Administration</option>
+
+  <!-- 🔐 Cybersecurity -->
+  <option>Cybersecurity</option>
+  <option>Ethical Hacking</option>
+  <option>Network Security</option>
+  <option>Information Security</option>
+
+  <!-- 🎨 Design -->
+  <option>UI/UX Design</option>
+  <option>Product Design</option>
+  <option>Graphic Design</option>
+
+  <!-- ⚙️ Core Engineering (Non-CS branches) -->
+  <option>Mechanical Design</option>
+  <option>Automobile Engineering</option>
+  <option>Thermal Engineering</option>
+  <option>Structural Engineering (Civil)</option>
+  <option>Construction Management</option>
+  <option>Electrical Systems</option>
+  <option>Power Systems Engineering</option>
+  <option>Embedded Systems</option>
+  <option>VLSI Design</option>
+  <option>Robotics & Automation</option>
+  <option>IoT (Internet of Things)</option>
+
+  <!-- 📊 Management / Career Paths -->
+  <option>Product Management</option>
+  <option>Business Analytics</option>
+  <option>Startup / Entrepreneurship</option>
+  <option>Research & Development</option>
+
+</select>
+
+    <input type="password" id="password" placeholder="Create password">
+
+    <input type="password" id="confirm" placeholder="Confirm password">
+
+    <!-- ✅ Use submit instead of onclick -->
+    <button type="submit">Register</button>
+
+  </form>
+
+  <br><br>
+
+  <a href="junior_login.html">Already have an account? Login</a>
+
+</div>
+
+<!-- ✅ JS should be at bottom -->
+<script src="./junior_register.js"></script>
+
+</body>
+</html>

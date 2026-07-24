@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Registration</title>
+  <link rel="stylesheet" href="./senior_register.css" />
+</head>
+
+<body>
+
+<div class="login-box">
+
+  <div class="icon">👨‍💼</div>
+
+  <h2>Senior Registration</h2>
+  <p>Share your journey and guide juniors</p>
+
+  <!-- Message -->
+  <p id="registerMessage"></p>
+
+  <!-- Form -->
+  <form id="registerForm">
+
+    <!-- Basic Info -->
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <input type="password" id="password" placeholder="Enter password" required>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+
+    <!-- Opportunity Type -->
+    <label>Opportunity Type</label>
+    <div class="radio-group">
+      <label><input type="radio" name="type" value="placement" required> Placement</label>
+      <label><input type="radio" name="type" value="internship"> Internship</label>
+    </div>
+
+    <!-- NEW: Domain -->
+    <select id="domain" required>
+  <option value="">Select Domain</option>
+
+  <!-- 💻 Core Software Development -->
+  <option value="Web Dev">Web Development</option>
+  <option value="Frontend">Frontend Development</option>
+  <option value="Backend">Backend Development</option>
+  <option value="Full Stack">Full Stack Development</option>
+  <option value="Mobile Dev">Mobile App Development</option>
+
+  <!-- 🧠 DSA / Placement Core -->
+  <option value="DSA">Data Structures & Algorithms</option>
+  <option value="Problem Solving">Competitive Programming</option>
+
+  <!-- 🤖 AI / Data Science -->
+  <option value="AI/ML">Artificial Intelligence / Machine Learning</option>
+  <option value="Data Science">Data Science</option>
+  <option value="Deep Learning">Deep Learning</option>
+  <option value="NLP">Natural Language Processing</option>
+  <option value="Data Analytics">Data Analytics</option>
+
+  <!-- ☁️ Cloud / DevOps -->
+  <option value="Cloud">Cloud Computing</option>
+  <option value="DevOps">DevOps</option>
+  <option value="SRE">Site Reliability Engineering</option>
+
+  <!-- 🔐 Cybersecurity -->
+  <option value="Cybersecurity">Cybersecurity</option>
+  <option value="Ethical Hacking">Ethical Hacking</option>
+  <option value="Network Security">Network Security</option>
+
+  <!-- ⚙️ Core Engineering -->
+  <option value="IoT">Internet of Things (IoT)</option>
+  <option value="Embedded">Embedded Systems</option>
+  <option value="VLSI">VLSI Design</option>
+  <option value="Robotics">Robotics & Automation</option>
+  <option value="Mechanical">Mechanical Engineering Core</option>
+  <option value="Civil">Civil Engineering Core</option>
+  <option value="Electrical">Electrical Engineering Core</option>
+
+  <!-- 🎨 Design -->
+  <option value="UIUX">UI/UX Design</option>
+  <option value="Product Design">Product Design</option>
+
+  <!-- 📊 Career / Industry -->
+  <option value="Product Management">Product Management</option>
+  <option value="Startup">Startup / Entrepreneurship</option>
+  <option value="Research">Research & Development</option>
+  <option value="Placement Prep">Placement Preparation</option>
+
+</select>
+
+    <!-- NEW: Branch -->
+    <select id="branch" required>
+
+  <option value="">Select Branch</option>
+
+  <!-- 💻 Computer & IT -->
+  <option value="CSE">Computer Science Engineering (CSE)</option>
+  <option value="CSE-AI">CSE (AI & ML)</option>
+  <option value="CSE-DS">CSE (Data Science)</option>
+  <option value="CSE-CS">CSE (Cyber Security)</option>
+   <option value="CSE-IOT">CSE (IOT)</option>
+   <option value="IT">Information Technology (IT)</option>
+
+  <!-- ⚡ Electronics -->
+  <option value="ECE">Electronics & Communication Engineering (ECE)</option>
+  <option value="EEE">Electrical & Electronics Engineering (EEE)</option>
+  <option value="ICE">Instrumentation & Control Engineering</option>
+
+  <!-- ⚙️ Core Engineering -->
+  <option value="MECH">Mechanical Engineering</option>
+  <option value="MECH-AUTO">Mechanical (Automobile)</option>
+  <option value="CIVIL">Civil Engineering</option>
+  <option value="CHEM">Chemical Engineering</option>
+
+  <!-- 🔬 Advanced / Modern Branches -->
+  <option value="AERO">Aerospace Engineering</option>
+  <option value="BIOTECH">Biotechnology</option>
+  <option value="AGRI">Agricultural Engineering</option>
+
+  <!-- 🤖 Emerging Tech -->
+  <option value="ROBOTICS">Robotics & Automation</option>
+  <option value="IOT">Internet of Things (IoT)</option>
+  <option value="VLSI">VLSI Design</option>
+
+</select>
+
+    <!-- Career Info -->
+    <input type="text" id="company" placeholder="Company (e.g., Amazon, TCS)" required>
+
+    <input type="text" id="role" placeholder="Role (e.g., SDE, Analyst)" required>
+
+    <!-- Skills -->
+    <input type="text" id="skills" placeholder="Skills (e.g., Java, DSA, React)" required>
+
+    <button type="submit">Register</button>
+
+  </form>
+
+  <br><br>
+
+  <a href="senior_login.html">Already a senior? Login here</a>
+
+</div>
+
+<script src="./senior_register.js"></script>
+
+</body>
+</html>

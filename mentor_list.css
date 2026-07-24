@@ -1,0 +1,501 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:white;
+    border-bottom:1px solid #e5e7eb;
+    gap:15px;
+}
+
+.logo h2{
+    color:#4f46e5;
+    white-space:nowrap;
+}
+
+.nav-controls{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+
+#searchInput{
+    width:260px;
+    max-width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+}
+
+#domainFilter{
+    padding:12px;
+    border-radius:10px;
+    max-width:100%;
+}
+
+.nav-controls button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#4f46e5;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-controls button:hover{
+    opacity:.9;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    margin-bottom:10px;
+}
+
+/* UPDATES */
+
+.updates-section{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 40px;
+}
+
+.update-card{
+    background:white;
+    padding:18px;
+    border-radius:14px;
+    margin-bottom:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    word-wrap:break-word;
+}
+
+.update-card strong{
+    display:block;
+    margin-bottom:6px;
+}
+
+.update-card small{
+    color:#666;
+}
+
+/* GRID */
+
+.container{
+    width:100%;
+    max-width:1600px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:.25s;
+    min-width:0;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    min-width:0;
+}
+
+/* AVATAR */
+
+.avatar{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#4f9cff,#6a5af9);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.avatar-wrapper{
+    position:relative;
+}
+
+.status-dot{
+    position:absolute;
+    bottom:4px;
+    right:4px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#22c55e;
+    border:2px solid white;
+}
+
+.card h3{
+    overflow-wrap:anywhere;
+}
+
+.company{
+    margin:8px 0;
+    color:#666;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.skills span{
+    background:#eef2ff;
+    color:#4f46e5;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.card-right{
+    white-space:nowrap;
+}
+
+.bookmark{
+    cursor:pointer;
+    font-size:22px;
+}
+
+.bookmark.active{
+    color:#f59e0b;
+}
+
+.empty-message{
+    text-align:center;
+    padding:30px;
+    font-size:18px;
+}
+
+/* ===================== DARK MODE ===================== */
+
+body.dark-mode{
+    background:#121212;
+    color:#ffffff;
+}
+
+/* Navbar */
+
+body.dark-mode .navbar{
+    background:#1e1e1e;
+    border-bottom:1px solid #333;
+}
+
+body.dark-mode .logo h2{
+    color:#7c8cff;
+}
+
+/* Hero */
+
+body.dark-mode .hero{
+    background:transparent;
+}
+
+body.dark-mode .hero h1{
+    color:#ffffff;
+}
+
+body.dark-mode .hero p{
+    color:#cfcfcf;
+}
+
+/* Updates */
+
+body.dark-mode .updates-section h2{
+    color:#ffffff;
+}
+
+body.dark-mode .update-card{
+    background:#1f1f1f;
+    color:#ffffff;
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+}
+
+body.dark-mode .update-card small{
+    color:#bdbdbd;
+}
+
+/* Cards */
+
+body.dark-mode .card{
+    background:#1f1f1f;
+    color:#ffffff;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+body.dark-mode .card:hover{
+    box-shadow:0 12px 25px rgba(0,0,0,.45);
+}
+
+body.dark-mode .card h3{
+    color:#ffffff;
+}
+
+body.dark-mode .company{
+    color:#c5c5c5;
+}
+
+body.dark-mode .card-right{
+    color:#d9d9d9;
+}
+
+/* Skills */
+
+body.dark-mode .skills span{
+    background:#323232;
+    color:#ffffff;
+}
+
+/* Inputs */
+
+body.dark-mode #searchInput,
+body.dark-mode #domainFilter{
+    background:#2a2a2a;
+    color:#ffffff;
+    border:1px solid #444;
+}
+
+body.dark-mode #searchInput::placeholder{
+    color:#bdbdbd;
+}
+
+/* Buttons */
+
+body.dark-mode button{
+    background:#4f46e5;
+    color:white;
+}
+
+body.dark-mode button:hover{
+    opacity:.9;
+}
+
+/* Empty Message */
+
+body.dark-mode .empty-message{
+    color:#d8d8d8;
+}
+
+/* Bookmark */
+
+body.dark-mode .bookmark{
+    color:white;
+}
+
+body.dark-mode .bookmark.active{
+    color:#f59e0b;
+}
+
+/* Avatar */
+
+body.dark-mode .avatar{
+    background:linear-gradient(135deg,#4f9cff,#6a5af9);
+}
+
+/* Status Dot */
+
+body.dark-mode .status-dot{
+    border:2px solid #1f1f1f;
+}
+
+/* Scrollbar */
+
+body.dark-mode::-webkit-scrollbar{
+    width:10px;
+}
+
+body.dark-mode::-webkit-scrollbar-track{
+    background:#1a1a1a;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:20px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover{
+    background:#777;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .container{
+        grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+        padding:30px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .navbar{
+        padding:18px 20px;
+    }
+
+    .updates-section{
+        padding:20px;
+    }
+
+    .container{
+        padding:20px;
+        grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    }
+
+    #searchInput{
+        width:220px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+        gap:15px;
+        padding:15px;
+    }
+
+    .logo{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-controls{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    #searchInput{
+        width:220px;
+    }
+
+    #domainFilter{
+        width:auto;
+    }
+
+    .hero{
+        padding:35px 15px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .updates-section{
+        padding:15px;
+    }
+
+    .container{
+        padding:15px;
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    .navbar{
+        padding:12px;
+    }
+
+    .nav-controls{
+        flex-direction:column;
+        align-items:stretch;
+        width:100%;
+    }
+
+    #searchInput,
+    #domainFilter,
+    .nav-controls button{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:12px;
+    }
+
+    .card{
+        padding:16px;
+    }
+
+    .avatar{
+        width:65px;
+        height:65px;
+        font-size:18px;
+    }
+
+}

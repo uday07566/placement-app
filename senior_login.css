@@ -1,0 +1,128 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* Background Shapes */
+
+body::before{
+content:"";
+position:absolute;
+top:-100px;
+left:-100px;
+width:300px;
+height:300px;
+background:linear-gradient(135deg,#6a11cb,#2575fc);
+border-radius:50%;
+opacity:0.3;
+}
+
+body::after{
+content:"";
+position:absolute;
+bottom:-100px;
+right:-100px;
+width:300px;
+height:300px;
+background:linear-gradient(135deg,#ff9966,#ff5e62);
+border-radius:50%;
+opacity:0.3;
+}
+
+/* Login Card */
+
+.login-box{
+
+background:white;
+padding:40px;
+width:350px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+position:relative;
+}
+
+/* Icon */
+
+.icon{
+font-size:50px;
+margin-bottom:10px;
+}
+
+/* Inputs */
+
+input{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+/* Button */
+
+button{
+
+width:100%;
+padding:12px;
+
+border:none;
+border-radius:6px;
+
+background:#2575fc;
+color:white;
+
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1a5edb;
+}
+
+/* Links */
+
+a{
+font-size:14px;
+color:#2575fc;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .login-box,
+    .card {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

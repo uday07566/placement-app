@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Discussions</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Community Discussions</h1>
+
+        <button id="openModalBtn">
+            + Ask a Doubt
+        </button>
+    </div>
+
+    <div id="postsContainer">
+
+    </div>
+
+</div>
+
+<!-- Create Post Modal -->
+
+<div class="modal" id="postModal">
+
+    <div class="modal-content">
+
+        <h2>Ask a Doubt</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Enter title"
+        >
+
+        <textarea
+            id="description"
+            placeholder="Describe your doubt..."
+        ></textarea>
+
+        <div class="modal-buttons">
+
+            <button id="submitPost">
+                Post
+            </button>
+
+            <button id="closeModal">
+                Cancel
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="community.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

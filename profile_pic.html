@@ -1,0 +1,18 @@
+<link rel="StyleSheet" href="./profile_pic.css" />
+<div class="profile-container">
+
+  <h2>Upload Profile Picture</h2>
+
+  <label for="profilePic" class="upload-label">Choose Image</label>
+<input type="file" id="profilePic" accept="image/*" />
+
+  <img id="preview" src="https://via.placeholder.com/120" />
+
+  <div class="buttons">
+    <button onclick="uploadPic()">Save & Continue</button>
+    <button onclick="skipPic()" class="skip-btn">Skip</button>
+  </div>
+
+</div>
+
+<script src="profile_pic.js"></script>

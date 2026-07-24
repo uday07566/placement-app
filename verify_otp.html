@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="./verify_otp.css" />
+</head>
+<body>
+
+<div class="reset-box">
+
+  <div class="icon">🔐</div>
+  <h2>Verify OTP</h2>
+
+  <div id="errorBox"></div>
+
+  <form id="otpForm">
+
+    <!-- Email -->
+    <input type="email" id="email" placeholder="Enter your Email" required />
+
+    <!-- Send OTP -->
+    <button type="button" id="sendOtpBtn">Send OTP</button>
+
+    <!-- OTP -->
+    <input type="text" id="otp" placeholder="Enter OTP" required />
+
+    <!-- Verify OTP -->
+    <button type="submit">Verify OTP</button>
+
+  </form>
+
+  <p id="message"></p>
+
+  <br>
+  <a href="junior_login.html">Back to Login</a>
+</div>
+
+<script src="./verify_otp.js"></script>
+
+</body>
+</html>

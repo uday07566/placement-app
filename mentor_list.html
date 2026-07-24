@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorBridge</title>
+
+    <link rel="stylesheet" href="mentor_list.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>MentorBridge</h2>
+        </div>
+
+        <div class="nav-controls">
+
+            <input type="text" id="searchInput" placeholder="Search mentors...">
+
+            <select id="domainFilter">
+
+    <option value="">All Domains</option>
+
+    <!-- 💻 Software / CS Core -->
+    <option value="web development">Web Development</option>
+    <option value="frontend">Frontend Development</option>
+    <option value="backend">Backend Development</option>
+    <option value="full stack">Full Stack Development</option>
+    <option value="mobile dev">Mobile App Development</option>
+
+    <!-- 🧠 DSA / Placement -->
+    <option value="dsa">DSA</option>
+    <option value="competitive programming">Competitive Programming</option>
+
+    <!-- 🤖 AI / Data -->
+    <option value="ai">AI / ML</option>
+    <option value="data science">Data Science</option>
+    <option value="deep learning">Deep Learning</option>
+    <option value="nlp">NLP</option>
+    <option value="data analytics">Data Analytics</option>
+
+    <!-- ☁️ Cloud / DevOps -->
+    <option value="cloud computing">Cloud Computing</option>
+    <option value="devops">DevOps</option>
+    <option value="sre">Site Reliability Engineering</option>
+
+    <!-- 🔐 Cybersecurity -->
+    <option value="cybersecurity">Cybersecurity</option>
+    <option value="ethical hacking">Ethical Hacking</option>
+    <option value="network security">Network Security</option>
+
+    <!-- ⚙️ Core Engineering -->
+    <option value="iot">IoT</option>
+    <option value="embedded systems">Embedded Systems</option>
+    <option value="vlsi">VLSI Design</option>
+    <option value="robotics">Robotics & Automation</option>
+    <option value="mechanical">Mechanical Engineering</option>
+    <option value="civil">Civil Engineering</option>
+    <option value="electrical">Electrical Engineering</option>
+    <option value="electronics">Electronics & Communication</option>
+
+    <!-- 🎨 Design -->
+    <option value="uiux">UI/UX Design</option>
+    <option value="product design">Product Design</option>
+
+    <!-- 📊 Career / Business -->
+    <option value="product management">Product Management</option>
+    <option value="startup">Startup / Entrepreneurship</option>
+    <option value="research">Research & Development</option>
+
+</select>
+
+            <button id="notificationsBtn">🔔 Notifications</button>
+            <button id="themeToggle">🌙</button>
+            <button onclick="openSettings()">
+    ⚙️ Settings
+</button>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Find Your Mentor</h1>
+        <p>Connect with experienced seniors and learn from their journey.</p>
+    </section>
+
+    <!-- UPDATES -->
+    <section class="updates-section">
+        <h2>Community Updates</h2>
+        <div id="updatesList"></div>
+    </section>
+
+    <div id="emptyMessage" class="empty-message" style="display:none;"></div>
+
+    <!-- MENTORS -->
+    <div class="container" id="mentorContainer"></div>
+
+    <script src="mentor_list.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+
+</html>

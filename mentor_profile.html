@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Profile</title>
+    <link rel="stylesheet" href="mentor_profile.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-card">
+
+        <div class="cover"></div>
+
+        <div class="profile-section">
+
+            <img id="profilePic" class="profile-img" src="" alt="Profile Picture">
+
+            <div class="profile-details">
+
+                <h1 id="name"></h1>
+
+                <p class="role" id="roleCompany"></p>
+
+                <p class="meta">
+                    <span id="branchDomain"></span> •
+                    <span id="type"></span>
+                </p>
+
+                <div class="action-buttons">
+
+                    <button class="message-btn private-btn"
+                        onclick="startPrivateChat()">
+                        💬 Message Privately
+                    </button>
+
+                    <button class="message-btn public-btn"
+                        onclick="goToCommunity()">
+                        🌐 Ask Publicly
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main-layout">
+
+        <div class="left-section">
+
+            <div class="card">
+                <h3>About</h3>
+                <p id="experience"></p>
+            </div>
+
+            <div class="card">
+                <h3>Key Highlight</h3>
+                <p id="majorSkill"></p>
+            </div>
+
+            <div class="card">
+                <h3>Skills</h3>
+                <div id="skills" class="skills-container"></div>
+            </div>
+
+            <div class="card">
+                <h3>Resources Used</h3>
+                <p id="resources"></p>
+            </div>
+
+        </div>
+
+        <div class="right-section">
+
+            <div class="card">
+
+                <h3>Profile Links</h3>
+
+                <div class="link-item">
+                    <span>🔗 LinkedIn</span>
+                    <a id="linkedin" target="_blank">View</a>
+                </div>
+
+                <div class="link-item">
+                    <span>💻 GitHub</span>
+                    <a id="github" target="_blank">View</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Quick Info</h3>
+
+                <p><strong>Domain:</strong> <span id="domain"></span></p>
+
+                <p><strong>Branch:</strong> <span id="branch"></span></p>
+
+                <p><strong>Type:</strong> <span id="type2"></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="mentor_profile.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

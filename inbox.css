@@ -1,0 +1,103 @@
+body{
+  margin:0;
+  background:#f5f7fb;
+  font-family:Arial,sans-serif;
+}
+
+.container{
+  width:90%;
+  max-width:800px;
+  margin:30px auto;
+}
+
+h1{
+  margin-bottom:20px;
+}
+
+.chat-card{
+  background:white;
+  padding:18px;
+  margin-bottom:12px;
+  border-radius:10px;
+  cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.chat-card:hover{
+  transform:translateY(-2px);
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .mentor-card,
+body.dark-mode .mentor-profile,
+body.dark-mode .profile-container,
+body.dark-mode .chat-container,
+body.dark-mode .chat-card,
+body.dark-mode .message-box,
+body.dark-mode .notification-card,
+body.dark-mode .settings-panel,
+body.dark-mode .sidebar,
+body.dark-mode .modal-content,
+body.dark-mode .dashboard-card,
+body.dark-mode .post-card{
+    background:#1e1e1e !important;
+    color:white !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#2a2a2a !important;
+    color:white !important;
+    border:1px solid #444 !important;
+}
+
+body.dark-mode button{
+    background:#333 !important;
+    color:white !important;
+}
+
+body.dark-mode a{
+    color:#4da6ff !important;
+}
+
+body.dark-mode table{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark-mode th,
+body.dark-mode td{
+    border-color:#444;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .login-box,
+    .card {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

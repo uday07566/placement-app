@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Senior Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="senior_dashboard.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <h1>
+                Welcome Back 👋
+                <span id="userName">
+                </span>
+            </h1>
+
+            <p>
+                Manage your mentorship activities from one place.
+            </p>
+
+        </div>
+
+        <!-- UPDATE SECTION -->
+
+        <div class="update-box">
+
+            <h2>
+                📢 Community Updates
+            </h2>
+
+            <textarea
+                id="updateContent"
+                placeholder="Share placement updates, internship openings, interview experiences, useful resources..."
+            ></textarea>
+
+            <button id="postUpdateBtn">
+
+                Post Update
+
+            </button>
+
+        </div>
+
+        <!-- DASHBOARD CARDS -->
+
+        <div class="cards">
+
+            <!-- INBOX -->
+
+            <div
+                class="card"
+                id="inboxCard"
+            >
+
+                <h3>
+                    📩 Inbox
+                </h3>
+
+                <p>
+                    View messages
+                </p>
+
+            </div>
+
+            <!-- NOTIFICATIONS -->
+
+            <div
+                class="card"
+                id="notificationCard"
+            >
+
+                <h3>
+                    🔔 Notifications
+                </h3>
+
+                <p>
+                    Latest activity
+                </p>
+
+            </div>
+
+            <!-- MENTOR LIST -->
+
+            <div
+                class="card"
+                id="mentorListCard"
+            >
+
+                <h3>
+                    👨‍🏫 Mentor List
+                </h3>
+
+                <p>
+                    Browse mentors
+                </p>
+
+            </div>
+
+            <!-- PROFILE -->
+
+            <div
+                class="card"
+                id="profileCard"
+            >
+
+                <h3>
+                    👤 My Profile
+                </h3>
+
+                <p>
+                    View your profile
+                </p>
+
+            </div>
+
+            <!-- SETTINGS -->
+
+            <div
+                class="card"
+                id="settingsCard"
+            >
+
+                <h3>
+                    ⚙️ Settings
+                </h3>
+
+                <p>
+                    Manage account settings
+                </p>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div
+                class="card logout-card"
+                id="logoutCard"
+            >
+
+                <h3>
+                    🚪 Logout
+                </h3>
+
+                <p>
+                    Sign out
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="senior_dashboard.js"></script>
+
+</body>
+
+</html>

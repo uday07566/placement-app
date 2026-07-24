@@ -1,0 +1,143 @@
+body{
+  margin:0;
+  background:#f5f7fb;
+  font-family:Arial, sans-serif;
+}
+
+.chat-container{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.chat-header{
+  background:#2563eb;
+  color:white;
+  padding:18px;
+}
+
+.chat-header h2{
+  margin:0;
+}
+
+.chat-messages{
+  flex:1;
+  overflow-y:auto;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.message{
+  max-width:70%;
+  padding:10px 14px;
+  border-radius:12px;
+  word-wrap:break-word;
+}
+
+.sent{
+  align-self:flex-end;
+  background:#2563eb;
+  color:white;
+}
+
+.received{
+  align-self:flex-start;
+  background:white;
+  border:1px solid #ddd;
+}
+
+.chat-input{
+  display:flex;
+  padding:15px;
+  background:white;
+  border-top:1px solid #ddd;
+}
+
+.chat-input input{
+  flex:1;
+  padding:12px;
+  font-size:15px;
+}
+
+.chat-input button{
+  margin-left:10px;
+  padding:12px 20px;
+  cursor:pointer;
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .mentor-card,
+body.dark-mode .mentor-profile,
+body.dark-mode .profile-container,
+body.dark-mode .chat-container,
+body.dark-mode .chat-card,
+body.dark-mode .message-box,
+body.dark-mode .notification-card,
+body.dark-mode .settings-panel,
+body.dark-mode .sidebar,
+body.dark-mode .modal-content,
+body.dark-mode .dashboard-card,
+body.dark-mode .post-card{
+    background:#1e1e1e !important;
+    color:white !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#2a2a2a !important;
+    color:white !important;
+    border:1px solid #444 !important;
+}
+
+body.dark-mode button{
+    background:#333 !important;
+    color:white !important;
+}
+
+body.dark-mode a{
+    color:#4da6ff !important;
+}
+
+body.dark-mode table{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark-mode th,
+body.dark-mode td{
+    border-color:#444;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .login-box,
+    .card {
+        width: 95%;
+        margin: auto;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
