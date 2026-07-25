@@ -17,7 +17,7 @@ async function loadProfile() {
     try {
 
         const res = await fetch(
-            `http://localhost:5000/senior-profile/${id}`
+            `https://placement-app-58d1.onrender.com/senior-profile/${id}`
         );
 
         if (!res.ok) {

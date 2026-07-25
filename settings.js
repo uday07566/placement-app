@@ -6,7 +6,7 @@ async function loadProfile() {
   try {
 
     const res = await fetch(
-      `http://localhost:5000/senior/profile/${seniorId}`
+      `https://placement-app-58d1.onrender.com/senior/profile/${seniorId}`
     );
 
     const data = await res.json();
@@ -112,7 +112,7 @@ document
   try {
 
     const res = await fetch(
-      `http://localhost:5000/senior/profile/${seniorId}`,
+      `https://placement-app-58d1.onrender.com/senior/profile/${seniorId}`,
       {
         method: "PUT",
 

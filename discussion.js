@@ -23,7 +23,7 @@ async function loadDiscussion() {
   try {
 
     const res = await fetch(
-      `http://localhost:5000/community/post/${postId}`
+      `https://placement-app-58d1.onrender.com/community/post/${postId}`
     );
 
     const post = await res.json();
@@ -49,7 +49,7 @@ async function loadReplies() {
   try {
 
     const res = await fetch(
-      `http://localhost:5000/community/replies/${postId}`
+      `https://placement-app-58d1.onrender.com/community/replies/${postId}`
     );
 
     const replies =
@@ -118,7 +118,7 @@ async () => {
   try {
 
     await fetch(
-      "http://localhost:5000/community/reply",
+      "https://placement-app-58d1.onrender.com/community/reply",
       {
         method:"POST",
         headers:{

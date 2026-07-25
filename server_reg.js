@@ -620,7 +620,7 @@ app.get("/senior-profile/:id", async (req, res) => {
 
     const profile = result.rows[0];
 
-    const baseUrl = "http://localhost:5000";
+    const baseUrl = "https://placement-app-58d1.onrender.com";
 
     // ✅ FIXED MAPPING
     const formattedProfile = {
@@ -714,7 +714,7 @@ app.get("/senior-profile/:id", async (req, res) => {
 
         const p = result.rows[0];
 
-        const baseUrl = "http://localhost:5000";
+        const baseUrl = "https://placement-app-58d1.onrender.com";
 
         res.json({
 

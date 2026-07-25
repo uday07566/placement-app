@@ -19,7 +19,7 @@ async function loadPosts() {
     try {
 
         const res = await fetch(
-            "http://localhost:5000/community/posts"
+            "https://placement-app-58d1.onrender.com/community/posts"
         );
 
         const posts = await res.json();
@@ -95,7 +95,7 @@ async () => {
     try {
 
         await fetch(
-            "http://localhost:5000/community/post",
+            "https://placement-app-58d1.onrender.com/community/post",
             {
                 method:"POST",
                 headers:{

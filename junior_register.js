@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 🔥 CALL BACKEND
     try {
-      const res = await fetch("http://localhost:5000/junior/register", {
+      const res = await fetch("https://placement-app-58d1.onrender.com/junior/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

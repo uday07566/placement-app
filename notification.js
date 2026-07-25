@@ -9,7 +9,7 @@ async function loadNotifications() {
 
     const res =
     await fetch(
-      "http://localhost:5000/notifications"
+      "https://placement-app-58d1.onrender.com/notifications"
     );
 
     const data =

@@ -87,7 +87,7 @@ document.getElementById("postUpdateBtn")
     try{
 
         const res = await fetch(
-            "http://localhost:5000/updates",
+            "https://placement-app-58d1.onrender.com/updates",
             {
                 method:"POST",
 

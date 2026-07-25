@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
 
-      const res = await fetch("http://localhost:5000/junior/login", {
+      const res = await fetch("https://placement-app-58d1.onrender.com/junior/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

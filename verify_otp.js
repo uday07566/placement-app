@@ -31,7 +31,7 @@ sendOtpBtn.addEventListener("click", async () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/send-otp", {
+    const res = await fetch("https://placement-app-58d1.onrender.com/send-otp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -66,7 +66,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/verify-otp", {
+    const res = await fetch("https://placement-app-58d1.onrender.com/verify-otp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

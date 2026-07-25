@@ -39,7 +39,7 @@ async function uploadPic() {
   formData.append("senior_id", seniorId);
 
   try {
-    const res = await fetch("http://localhost:5000/profile_pic", {
+    const res = await fetch("https://placement-app-58d1.onrender.com/profile_pic", {
       method: "POST",
       body: formData
     });

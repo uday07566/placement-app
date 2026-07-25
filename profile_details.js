@@ -38,7 +38,7 @@ async function saveProfile() {
 
         const response = await fetch(
 
-            "http://localhost:5000/profile_details",
+            "https://placement-app-58d1.onrender.com/profile_details",
 
             {
 

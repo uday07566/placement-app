@@ -9,7 +9,7 @@ async function loadInbox(){
   try{
 
     const res = await fetch(
-      `http://localhost:5000/chat/inbox/${seniorId}`
+      `https://placement-app-58d1.onrender.com/chat/inbox/${seniorId}`
     );
 
     const chats =

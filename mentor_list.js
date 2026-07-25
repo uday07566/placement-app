@@ -13,7 +13,7 @@ let allMentors = [];
 
 /* UPDATES */
 async function loadUpdates(){
-    const res = await fetch("http://localhost:5000/updates");
+    const res = await fetch("https://placement-app-58d1.onrender.com/updates");
     const updates = await res.json();
 
     updatesList.innerHTML = "";
@@ -52,7 +52,7 @@ darkModeBtn.addEventListener("click", () => {
 
 /* MENTORS */
 async function loadMentors(){
-    const res = await fetch("http://localhost:5000/mentors");
+    const res = await fetch("https://placement-app-58d1.onrender.com/mentors");
     allMentors = await res.json();
     renderMentors(allMentors);
 }

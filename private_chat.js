@@ -1,5 +1,5 @@
 const socket = io(
-  "http://localhost:5000"
+  "https://placement-app-58d1.onrender.com"
 );
 const params = new URLSearchParams(window.location.search);
 
@@ -45,7 +45,7 @@ async function juniorFlow(){
   // Load senior name
 
   const seniorRes = await fetch(
-    `http://localhost:5000/chat/senior/${seniorId}`
+    `https://placement-app-58d1.onrender.com/chat/senior/${seniorId}`
   );
 
   const senior =
@@ -58,7 +58,7 @@ async function juniorFlow(){
   // Create/Get conversation
 
   const convoRes = await fetch(
-    "http://localhost:5000/chat/conversation",
+    "https://placement-app-58d1.onrender.com/chat/conversation",
     {
       method:"POST",
 
@@ -110,7 +110,7 @@ async function seniorFlow(){
   // Load junior name
 
   const juniorRes = await fetch(
-    `http://localhost:5000/chat/junior/${juniorId}`
+    `https://placement-app-58d1.onrender.com/chat/junior/${juniorId}`
   );
 
   const junior =
@@ -132,7 +132,7 @@ async function seniorFlow(){
 async function loadMessages(){
 
   const res = await fetch(
-    `http://localhost:5000/chat/messages/${conversationId}`
+    `https://placement-app-58d1.onrender.com/chat/messages/${conversationId}`
   );
 
   const messages =
@@ -191,7 +191,7 @@ async function sendMessage(){
       : localStorage.getItem("seniorId");
 
   await fetch(
-    "http://localhost:5000/chat/send",
+    "https://placement-app-58d1.onrender.com/chat/send",
     {
       method:"POST",
 
