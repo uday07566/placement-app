@@ -2,8 +2,9 @@
   "name": "placement-app",
   "version": "1.0.0",
   "description": "",
-  "main": "junior_login.js",
+  "main": "server_reg.js",
   "scripts": {
+    "start": "node server_reg.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
