@@ -1,4 +1,7 @@
 require("dotenv").config();
+
+const dns = require("dns");
+dns.setDefaultResultOrder("ipv4first");
 const express = require("express");
 const { Pool } = require("pg");
 const cors = require("cors");
@@ -6,7 +9,6 @@ const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
 const multer = require("multer");
 const path = require("path");
-
 const app = express();
 
 // Middleware
@@ -47,7 +49,10 @@ const otpStore = {};
 
 // 🔹 Email Transporter
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  family: 4,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
